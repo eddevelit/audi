@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Alta de alumnos</title>
+  <title>Alta de Empleados</title>
   <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
@@ -25,7 +25,7 @@
  <!-- Navbar goes here -->
  <nav>
     <div class="nav-wrapper red lighten-1 z-depth-1">
-      <a href="../index.html" class="brand-logo">Alumno</a>
+      <a href="../index.html" class="brand-logo">Empleados</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="alta.php">Alta</a></li>
         <li><a href="actualizar.php">Actualización</a></li>
@@ -52,13 +52,13 @@
         <!-- Teal page content  -->
         <h5>Introduzca los datos requeridos:</h5>
         <form action="insertar.php" id="form1" name="form1" method="post" enctype="multipart/form-data">
-         <!--Numero de control-->
+         <!--Clave de empleado-->
           <div class="divider"></div>
           <div class="row">
             <div class="section">
               <div class="input-field col s6">
-                <label for="no_control">Número de control</label>
-                <input type="text" id="no_control" name="no_control" class="validate" placeholder="121130248" autofocus="autofocus">
+                <label for="clave_empleado">Clave de empleado</label>
+                <input type="text" id="clave_empleado" name="clave_empleado" class="validate" placeholder="308226067" autofocus="autofocus">
               </div>
               <div class="input-field col s6">
                 <label for="nss">Número de Seguro Social</label>
@@ -111,36 +111,28 @@
           <!--Datos escolares-->
           <div class="divider"></div>
           <div class="row">
-            <h6>Datos escolares:</h6>
+            <h6>Datos profesionales:</h6>
             <div class="section">
               <div class="input-field col s6">
                 <label for="fecha_ingreso">Fecha de ingreso</label>
-                <input type="text" id="fecha_ingreso" name="fecha_ingreso" class="vaidate" placeholder="yyyy-mm-dd">
+                <input type="text" id="fecha_ingreso" name="fecha_ingreso" class="validate" placeholder="yyyy-mm-dd">
               </div>
               <div class="input-field col s6">
                 <label class="active" for="carrera">Carrera</label>
-                <!--input type="text" id="carrera" name="carrera" class="vaidate" placeholder="Ingeniería en Tecnologias de la información y comunicación"-->
-                <select name="carrera" id="carrera">
-                  <option value="" disabled selected>Seleccione una opción</option>
-                  <option value="Ingeniería en Tecnologías de la Informacíon y Comunicación">Ingeniería en Tecnologías de la informacíon y comunicación</option>
-                  <option value="Ingeniería en Gestión Empresarial">Ingeniería en Gestión Empresarial</option>
-                  <option value="Ingeniería en Logístca">Ingeniería en Logístca</option>
-                  <option value="Ingeniería Industrial">Ingeniería Industrial</option>
-                  <option value="Ingeniería Ambiental">Ingeniería Ambiental</option>
-                </select>
+                <input type="text" id="carrera" name="carrera" class="validate" placeholder="Ingeniería en Tecnologias de la información y comunicación">
               </div>
               <br>
               <div class="input-field col s6">
-                <label for="tipo_de_curso">Tipo de alumno</label>
-                <input type="text" id="tipo_de_curso" name="tipo_de_curso" class="vaidate" placeholder="Recursador">
+                <label for="nivel_de_estudio">Nivel de estudios</label>
+                <input type="text" id="nivel_de_estudio" name="nivel_de_estudio" class="validate" placeholder="Maestria">
               </div>
               <div class="input-field col s6">
-                <label for="porcentaje_creditos">Porcentaje de créditos </label>
-                <input type="text" id="porcentaje_creditos" name="porcentaje_creditos" class="vaidate" placeholder="76%">
+                <label for="sueldo">Sueldo</label>
+                <input type="text" id="sueldo" name="sueldo" class="validate" placeholder="4000">
               </div>
               <div class="input-field col s6">
-                <label for="nivel_ingles">Nivel de inglés</label>
-                <input type="text" id="nivel_ingles" name="nivel_ingles" class="vaidate" placeholder="Nivel 4">
+                <label for="tipo_contrato">Tipo de contrato</label>
+                <input type="text" id="tipo_contrato" name="tipo_contrato" class="validate" placeholder="Honorarios">
               </div>
             </div>
           </div>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Alta de alumnos</title>
+  <title>Alta de profesores</title>
   <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
@@ -25,7 +25,7 @@
  <!-- Navbar goes here -->
  <nav>
     <div class="nav-wrapper red lighten-1 z-depth-1">
-      <a href="../index.html" class="brand-logo">Alumno</a>
+      <a href="../index.html" class="brand-logo">Profesor</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="alta.php">Alta</a></li>
         <li><a href="actualizar.php">Actualización</a></li>
@@ -111,7 +111,7 @@
           <!--Datos escolares-->
           <div class="divider"></div>
           <div class="row">
-            <h6>Datos escolares:</h6>
+            <h6>Datos profesionales:</h6>
             <div class="section">
               <div class="input-field col s6">
                 <label for="fecha_ingreso">Fecha de ingreso</label>
@@ -119,28 +119,20 @@
               </div>
               <div class="input-field col s6">
                 <label class="active" for="carrera">Carrera</label>
-                <!--input type="text" id="carrera" name="carrera" class="vaidate" placeholder="Ingeniería en Tecnologias de la información y comunicación"-->
-                <select name="carrera" id="carrera">
-                  <option value="" disabled selected>Seleccione una opción</option>
-                  <option value="Ingeniería en Tecnologías de la Informacíon y Comunicación">Ingeniería en Tecnologías de la informacíon y comunicación</option>
-                  <option value="Ingeniería en Gestión Empresarial">Ingeniería en Gestión Empresarial</option>
-                  <option value="Ingeniería en Logístca">Ingeniería en Logístca</option>
-                  <option value="Ingeniería Industrial">Ingeniería Industrial</option>
-                  <option value="Ingeniería Ambiental">Ingeniería Ambiental</option>
-                </select>
+                <input type="text" id="carrera" name="carrera" class="vaidate" placeholder="Ingeniería en Tecnologias de la información y comunicación">
               </div>
               <br>
               <div class="input-field col s6">
-                <label for="tipo_de_curso">Tipo de alumno</label>
-                <input type="text" id="tipo_de_curso" name="tipo_de_curso" class="vaidate" placeholder="Recursador">
+                <label for="nivel_de_estudio">Nivel de estudios</label>
+                <input type="text" id="nivel_de_estudio" name="nivel_de_estudio" class="vaidate" placeholder="Maestria">
               </div>
               <div class="input-field col s6">
-                <label for="porcentaje_creditos">Porcentaje de créditos </label>
-                <input type="text" id="porcentaje_creditos" name="porcentaje_creditos" class="vaidate" placeholder="76%">
+                <label for="sueldo">Sueldo</label>
+                <input type="text" id="sueldo" name="sueldo" class="vaidate" placeholder="4000">
               </div>
               <div class="input-field col s6">
-                <label for="nivel_ingles">Nivel de inglés</label>
-                <input type="text" id="nivel_ingles" name="nivel_ingles" class="vaidate" placeholder="Nivel 4">
+                <label for="tipo_contrato">Tipo de contrato</label>
+                <input type="text" id="tipo_contrato" name="tipo_contrato" class="vaidate" placeholder="Honorarios">
               </div>
             </div>
           </div>
