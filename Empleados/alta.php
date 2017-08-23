@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Alta de Empleados</title>
+  <title>Empleados</title>
   <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
@@ -24,12 +24,10 @@
   </script>
  <!-- Navbar goes here -->
  <nav>
-    <div class="nav-wrapper red lighten-1 z-depth-1">
+    <div class="nav-wrapper red accent-4 z-depth-1">
       <a href="../index.html" class="brand-logo">Empleados</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="alta.php">Alta</a></li>
-        <li><a href="actualizar.php">Actualización</a></li>
-        <li><a href="consultar.php">Consulta</a></li>
         <li><a href="baja.php">Baja</a></li>
       </ul>
     </div>
@@ -39,118 +37,71 @@
       <div class="col s3">
         <!-- Grey navigation panel -->
         <div class="collection center-align z-depth-1">
-           <a href="../Alumno/alta.php" class="collection-item">Alumno</a>
-         <a href="../Profesor/alta.php" class=" collection-item  grey-text">Profesor</a>
-         <a href="../Materia/alta.php" class=" collection-item  grey-text">Materia</a>
-         <a href="../Biblioteca/alta.php" class=" collection-item  grey-text">Biblioteca</a>
-         <a href="../Mobiliario/alta.php" class=" collection-item  grey-text">Mobiliario</a>
-         <a href="../Empleados/alta.php" class=" collection-item  grey-text">Empleados</a>
-         <a href="../Departamentos/alta.php" class=" collection-item  grey-text">Departamentos</a>
+         <a href="../Empleados/alta.php" class="collection-item  red-text">Empleados</a>
+         <a href="../Clientes/alta.php" class=" collection-item  black-text">Clientes</a>
+         <a href="../Encuesta de Calidad/alta.php" class=" collection-item  black-text">Encuesta de Calidad</a>
         </div>
       </div>
       <div class="col s9 padding">
         <!-- Teal page content  -->
         <h5>Introduzca los datos requeridos:</h5>
         <form action="insertar.php" id="form1" name="form1" method="post" enctype="multipart/form-data">
-         <!--Clave de empleado-->
-          <div class="divider"></div>
-          <div class="row">
-            <div class="section">
-              <div class="input-field col s6">
-                <label for="clave_empleado">Clave de empleado</label>
-                <input type="text" id="clave_empleado" name="clave_empleado" class="validate" placeholder="308226067" autofocus="autofocus">
-              </div>
-              <div class="input-field col s6">
-                <label for="nss">Número de Seguro Social</label>
-                <input type="text" id="nss" name="nss" class="validate" placeholder="213881003333">
-              </div>
-            </div>
-          </div>
+        
           <!--Nombre completo-->
           <div class="divider"></div>
             <div class="row">
-            <h6>Nombre:</h6>
+            <h6>Nombre del Empleado:</h6>
             <div class="section">
               <div class="input-field col s4">
-                <label for="nombre">Nombre(s)</label>
-                <input type="text" id="nombre" name="nombre" class="validate" placeholder="Jorge Eduardo">
+                <label for="nombree">Nombre(s)</label>
+                <input type="text" id="nombree" name="nombree" class="validate" placeholder="Nombre(s)">
               </div>
               <div class="input-field col s4">
-                <label for="apellidop">Apellido paterno</label>
-                <input type="text" id="apellidop" name="apellidop" class="validate" placeholder="Ocampo">
+                <label for="apellidopa">Apellido Paterno</label>
+                <input type="text" id="apellidopa" name="apellidopa" class="validate" placeholder="Apellido Paterno">
               </div>
               <div class="input-field col s4">
-                <label for="apellidom">Apellido materno</label>
-                <input type="text" id="apellidom" name="apellidom" class="validate" placeholder="Lagunas">
+                <label for="apellidoma">Apellido materno</label>
+                <input type="text" id="apellidoma" name="apellidoma" class="validate" placeholder="Apellido Materno">
               </div>
             </div>
           </div>
-          <!--Dirección-->
+          <!--Datos cliente-->
           <div class="divider"></div>
           <div class="row">
-            <h6>Dirección</h6>
-            <div class="section">
-              <div class = "input-field col s6">
-                <label for="calle">Calle y número</label>
-                <input type="text" id="calle" name="calle" class="validate" placeholder="Valle del Misisipi no. 151">
-              </div>
-              <div class = "input-field col s6">
-                <label for="colonia">Colonia</label>
-                <input type="text" id="colonia" name="colonia" class="validate" placeholder="Valle de Aragón">
-              </div>
-              <div class = "input-field col s6">
-                <label for="delegacion">Delegación o municipio</label>
-                <input type="text" id="delegacion" name="delegacion" class="validate" placeholder="Nezahualcóyotl">
-              </div>
-              <div class = "input-field col s6">
-                <label for="entidad">Entidad</label>
-                <input type="text" id="entidad" name="entidad" class="validate" placeholder="Estado de México">
-              </div>
-            </div>
-          </div>
-          <!--Datos escolares-->
-          <div class="divider"></div>
-          <div class="row">
-            <h6>Datos profesionales:</h6>
+            <h6>Datos del empleado:</h6>
             <div class="section">
               <div class="input-field col s6">
-                <label for="fecha_ingreso">Fecha de ingreso</label>
-                <input type="text" id="fecha_ingreso" name="fecha_ingreso" class="validate" placeholder="yyyy-mm-dd">
+                <label class="active" for="puesto">Puesto</label>
+                <input type="text" id="puesto" name="puesto" class="vaidate" placeholder="Puesto">
               </div>
               <div class="input-field col s6">
-                <label class="active" for="carrera">Carrera</label>
-                <input type="text" id="carrera" name="carrera" class="validate" placeholder="Ingeniería en Tecnologias de la información y comunicación">
-              </div>
-              <br>
-              <div class="input-field col s6">
-                <label for="nivel_de_estudio">Nivel de estudios</label>
-                <input type="text" id="nivel_de_estudio" name="nivel_de_estudio" class="validate" placeholder="Maestria">
-              </div>
-              <div class="input-field col s6">
-                <label for="sueldo">Sueldo</label>
-                <input type="text" id="sueldo" name="sueldo" class="validate" placeholder="4000">
-              </div>
-              <div class="input-field col s6">
-                <label for="tipo_contrato">Tipo de contrato</label>
-                <input type="text" id="tipo_contrato" name="tipo_contrato" class="validate" placeholder="Honorarios">
-              </div>
+                <label for="correo_electronicoe">Correo Electronico</label>
+                <input type="text" id="correo_electronicoe" name="correo_electronicoe" class="vaidate" placeholder="Correo Electronico">
             </div>
           </div>
+          </div> 
           <!--Botón-->
           <div class="divider"></div>
           <div class="row">
             <div class="section">
               <div class="col s3 offset-s9">
-                <button type="submit" class="btn waves-effect waves-light red lighten-1" name="action">Enviar <i class="material-icons right">send</i></button>
+                <button type="submit" class="btn waves-effect waves-light red accent-4" name="action">Guardar<i class="material-icons right">save</i></button>
+
               </div>
             </div>
           </div>
         </form> 
     </div>
-    </div><!--Final del ROW-->
-        <footer class="page-footer">
+    </div>
+</form>
+</div>
+</div>
+</body>
+</html>
+    <!--Final del ROW-->
+        <footer class="page-footer red accent-4">
             <div class="container">
-            © 2016 Eddo
             <br>
             </div>
         </footer>

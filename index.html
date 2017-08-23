@@ -2,34 +2,86 @@
 <html>
 <head>
 <meta charset="utf-8">
-	<title>Bienvenido a la pagina principal!!</title>
+	<title>Audi Center Coapa</title>
 	<!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!--link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"--/>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="grey darken-1 container">
+<body>
 	<!--Import jQuery before materialize.js-->
    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
    <script type="text/javascript" src="js/materialize.min.js"></script>
    <div>
-   	 <div class="card-panel red lighten-1 z-depth-1 grey-text text-darken-4">
-	   <h4>Bienvenido, seleccione una opción:</h4>
+   	 <div class="card-panel red lighten-1 z-depth-1 red-text text-darken-5">
+     <h1><img src="images/LOGO2.png" alt="..." > ¡Bienvenido!</h1>
 	 </div>
-	   <div class="row">
-   <div class="collection col s6 offset-s3 center-align padding">
-       <a href="Alumno/alta.php" class="collection-item">Alumno</a>
-	   <a href="Profesor/alta.php" class=" collection-item  grey-text">Profesor</a>
-	   <a href="Materia/alta.php" class=" collection-item  grey-text">Materia</a>
-	   <a href="Biblioteca/alta.php" class=" collection-item  grey-text">Biblioteca</a>
-	   <a href="Mobilario/alta.php" class=" collection-item  grey-text">Mobiliario</a>
-	   <a href="Empleados/alta.php" class=" collection-item  grey-text">Empleados</a>
-	   <a href="Departamentos/alta.php" class=" collection-item  grey-text">Departamentos</a>
+<!--Corrousel-->
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="4000">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active"><center>
+      <a href="http://www.audi.com.mx/mx/web/es.html"><img src="images/LOGO.jpg" alt="..." ></a>
+      <div class="carousel-caption">
+       <h3>Pagina Oficial Audi</h3>
+      </div>
     </div>
+    <div class="item"><center>
+      <img src="images/audi3.jpg" alt="..." width="" height="">
+      <div class="carousel-caption">
+      </div>
+    </div>
+    <div class="item"><center>
+      <img src="images/audi2.jpg" alt="...">
+      <div class="carousel-caption">
+      </div>
+    </div>
+     <div class="item"><center>
+      <img src="images/audi4.png" alt="...">
+      <div class="carousel-caption">
+      </div>
+    </div>
+    ...
+  </div>
+
+  <!-- Controles -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<!--Termina el coarousel-->   
+	   <div class="row">
+   <div class="collection col s6 offset-s4 center-align padding">
+   
+       <center><a href="Empleados/alta.php" class="collection-item  red-text">Empleados</a></center>
+	     <center><a href="Clientes/alta.php" class=" collection-item  grey-text">Clientes</a></center>
+       <center><a href="Encuesta de Calidad/alta.php" class=" collection-item  grey-text">Encuesta de Calidad</a></center>
+	   </div>
    </div>
    </div>
+   </div>
+
+   <script src="js/jquery-3.1.1.min.js" ></script>
+<script src="js/bootstrap.min.js"></script> 
 </body>
 </html>

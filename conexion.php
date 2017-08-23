@@ -1,5 +1,10 @@
 <?php 
-$cn = mysql_connect("localhost","root","");
-$db = mysql_select_db("escuela") or die ("Error db");
-return($cn);
+$con = new mysqli("localhost", "root", "", "audi");
+if ($con->connect_errno) {
+    echo "Fallo al conectar a MySQL: (" . $con->connect_errno . ") " . $con->connect_error;
+}else{
+	echo $con->host_info . "\n";
+}
+
+
  ?>
